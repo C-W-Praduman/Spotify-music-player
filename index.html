@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/favicon32.b64ecc03.png"
+      type="image/x-icon"
+    />
+    <title>Spotify – Search</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utilities.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <nav class="flex item-center justify-between">
+        <section class="nav-left flex item-center justify-center gap-6">
+          <button class="btn logo-btn">
+            <img class="invert" src="assets/logo.svg" alt="" />
+          </button>
+          <button class="btn home-btn">
+            <img class="invert" src="assets/home.svg" alt="" />
+          </button>
+          <div class="search-div">
+            <button class="search-btn flex item-center">
+              <img class="invert" src="assets/search.svg" alt="" />
+            </button>
+            <input
+              type="text"
+              class="search-input"
+              placeholder="What do you want to play ?"
+            />
+
+            <p class="primary-clr font-base">
+              <i class="ri-folder-5-fill"></i>
+            </p>
+          </div>
+        </section>
+        <section class="nav-right flex item-center justify-center gap-6">
+          <ul class="nav-item">
+            <li class="margin-inline-4"><a href="#">Premium</a></li>
+            <li class="margin-inline-4"><a href="#">Support</a></li>
+            <li class="margin-inline-4"><a href="#">Download</a></li>
+          </ul>
+          <ul class="nav-item-2">
+            <li class="margin-inline-4">
+              <a href="#"> <i class="ri-install-line"></i> install App</a>
+            </li>
+            <li class="margin-inline-4"><a href="#">Sign up</a></li>
+          </ul>
+
+          <button class="login-btn">Login</button>
+        </section>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="container flex justify-between gap-3">
+          <div class="left-section p-2">
+            <div class="left-top flex item-center justify-between">
+              <p class="primary-clr font-base fw-bold">Your Liabrary</p>
+              <p class="secondary-clr font-large fw-med">+</p>
+            </div>
+
+            <div class="scroll-div">
+              <div class="scroll-item p-1 light-black-div flex column gap-6">
+                <div>
+                  <p class="font-base fw-bold">Create your first playlist</p>
+                  <p class="font-small fw-bold secondary-clr">
+                    it's easy,we'll help you
+                  </p>
+                </div>
+                <div>
+                  <button class="plalist-btn">Create Playlist</button>
+                </div>
+              </div>
+              <div class="scroll-item p-1 light-black-div flex column gap-6">
+                <div>
+                  <p class="font-base fw-bold">
+                    Let's find some podcast to follow
+                  </p>
+                  <p class="font-small fw-bold secondary-clr">
+                    we'll keep you updated on new episodes
+                  </p>
+                </div>
+                <div>
+                  <button class="plalist-btn">Browse podcasts</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="links">
+              <a href="#" class="secondary-clr fw-med fs-xs">Legal</a>
+              <a href="#" class="secondary-clr fw-med fs-xs"
+                >Safety & privacy center</a
+              >
+              <a href="#" class="secondary-clr fw-med fs-xs">Ptivacy poliy</a>
+              <a href="#" class="secondary-clr fw-med fs-xs">cookies</a>
+              <a href="#" class="bottom secondary-clr fw-med fs-xs"
+                >About Ads</a
+              >
+              <a href="#" class="bottom secondary-clr fw-med fs-xs"
+                >Accessibility</a
+              >
+              <p class="fw-med fs-xs">Cookies</p>
+            </div>
+
+            <div class="lef-btn">
+              <button class="language-btn">
+                <i class="ri-global-line"></i> English
+              </button>
+            </div>
+          </div>
+          <div class="right-section p-2">
+            <div class="right-top">
+                <h1 class="primary-clr fw-bold ">Spotify playlists</h1>
+            </div>
+            <div class="card-grid">
+              <!-- multiple .music-card here -->
+              <div class="music-card">
+                <div class="card-img">
+                  <img src="https://i.scdn.co/image/ab67706f000000023f7b39872b6bb36288c1a52c" alt="Album Cover" />
+                  <div class="play-icon ">
+                    <i class="ri-play-large-fill"></i>
+                  </div>
+                </div>
+                <h3 class="card-title">Song / Playlist Name</h3>
+                <p class="card-subtitle">Artist Name</p>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+      </section>
+      <section>
+        <div class="music-player">
+  <div class="song-info">
+    <img src="assets/cover.jpg" alt="cover" class="cover-img" />
+    <div>
+      <h4 class="song-title">Song Title</h4>
+      <p class="artist-name">Artist Name</p>
+    </div>
+  </div>
+
+  <div class="controls">
+    <button id="prevBtn"><i class="fa-solid fa-backward-step"></i></button>
+    <button id="playPauseBtn"><i class="ri-play-large-fill"></i></i></button>
+    <button id="nextBtn"><i class="fa-solid fa-forward-step"></i></button>
+
+    <div class="progress-container">
+      <span id="currentTime">0:00</span>
+      <input type="range" id="progressBar" min="0" value="0" />
+      <span id="duration">0:00</span>
+    </div>
+  </div>
+
+  <div class="volume-control">
+    <i class="fa-solid fa-volume-high"></i>
+    <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1" />
+  </div>
+
+  <audio id="audioPlayer"></audio>
+</div>
+      </section>
+    </main>
+
+    <section>
+
+    </section>
+
+    
+  </body>
+</html>
