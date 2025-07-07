@@ -102,3 +102,7 @@ li a{
 .fs-xs{
     font-size: 11px;
 }
+
+.cursor-pointer{
+    cursor: pointer;
+}

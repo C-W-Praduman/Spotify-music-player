@@ -15,7 +15,10 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
   <body>
     <header>
@@ -120,61 +123,67 @@
           </div>
           <div class="right-section p-2">
             <div class="right-top">
-                <h1 class="primary-clr fw-bold ">Spotify playlists</h1>
+              <h1 class="primary-clr fw-bold">Spotify playlists</h1>
             </div>
             <div class="card-grid">
-              <!-- multiple .music-card here -->
-              <div class="music-card">
-                <div class="card-img">
-                  <img src="https://i.scdn.co/image/ab67706f000000023f7b39872b6bb36288c1a52c" alt="Album Cover" />
-                  <div class="play-icon ">
-                    <i class="ri-play-large-fill"></i>
-                  </div>
-                </div>
-                <h3 class="card-title">Song / Playlist Name</h3>
-                <p class="card-subtitle">Artist Name</p>
-              </div>
+              <!-- multiple .music-card here dynamically add via js -->
             </div>
           </div>
-        
         </div>
       </section>
       <section>
         <div class="music-player">
-  <div class="song-info">
-    <img src="assets/cover.jpg" alt="cover" class="cover-img" />
-    <div>
-      <h4 class="song-title">Song Title</h4>
-      <p class="artist-name">Artist Name</p>
-    </div>
-  </div>
+          <div class="song-info">
+            <img src="" alt="" class="cover-img" />
+            <div>
+              <h4 class="song-title"></h4>
+              <p class="artist-name"></p>
+            </div>
+          </div>
 
-  <div class="controls">
-    <button id="prevBtn"><i class="fa-solid fa-backward-step"></i></button>
-    <button id="playPauseBtn"><i class="ri-play-large-fill"></i></i></button>
-    <button id="nextBtn"><i class="fa-solid fa-forward-step"></i></button>
+          <div class="controls">
+            <button id="prevBtn">
+              <i class="fa-solid fa-backward-step"></i>
+            </button>
+            <button id="playPauseBtn">
+              <i class="ri-play-large-fill"></i>
+            </button>
+            <button id="nextBtn">
+              <i class="fa-solid fa-forward-step"></i>
+            </button>
 
-    <div class="progress-container">
-      <span id="currentTime">0:00</span>
-      <input type="range" id="progressBar" min="0" value="0" />
-      <span id="duration">0:00</span>
-    </div>
-  </div>
+            <div class="progress-container">
+              <span id="currentTime">0:00</span>
 
-  <div class="volume-control">
-    <i class="fa-solid fa-volume-high"></i>
-    <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1" />
-  </div>
+              <input type="range" id="progressBar" class="cursor-pointer" min="0" value="0" />
 
-  <audio id="audioPlayer"></audio>
-</div>
+              <span id="duration">0:00</span>
+            </div>
+          </div>
+
+          <div class="volume-control">
+
+            <div class="volume-control-icon cursor-pointer">
+            <i class="fa-solid fa-volume-high"></i>
+
+            </div>
+            <input
+              type="range"
+              id="volumeSlider"
+              min="0"
+              max="1"
+              step="0.01"
+              value="1"
+            />
+          </div>
+
+          <audio id="audioPlayer"></audio>
+        </div>
       </section>
     </main>
 
-    <section>
+   
 
-    </section>
-
-    
+    <script src="script.js"></script>
   </body>
 </html>
