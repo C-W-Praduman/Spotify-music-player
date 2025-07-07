@@ -393,7 +393,7 @@ transform: translateY(0px);
   border: none;
   border-radius: 50%;
   cursor: pointer;
-  margin-top: -5px;
+
 }
 #progressBar {
   width: 100%;
@@ -413,7 +413,8 @@ transform: translateY(0px);
 }
 
 #volumeSlider {
-
+  appearance: none;
+  -webkit-appearance: none;
   width: 100px;
   height: 4px;
   border-radius: 4px;
@@ -433,14 +434,8 @@ transform: translateY(0px);
   border: none;
 }
 
-/* Firefox */
-#volumeSlider::-moz-range-thumb {
-  height: 14px;
-  width: 14px;
-  background: #1ED760;
-  border-radius: 50%;
-  border: none;
-}
+
+
 
 @media (max-width:700px){
     .left-section{
