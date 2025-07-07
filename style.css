@@ -413,7 +413,7 @@ transform: translateY(0px);
 }
 
 #volumeSlider {
-  -webkit-appearance: none;
+
   width: 100px;
   height: 4px;
   border-radius: 4px;
